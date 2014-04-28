@@ -1,0 +1,128 @@
+/*
+
+Lista TODO
+Versão 1.0 - 16/04/2012
+Guilherme de Oliveira Souza
+http://sitegui.com.br
+
+*/
+
+* {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+textarea {
+	position:absolute;
+	top:0;
+	height:95%;
+	width:100%;
+	resize:none;
+	margin:0;
+	font-family:"Courier New", Courier, monospace;
+	outline:none;
+	border:none;
+}
+.dica {
+	position:absolute;
+	width:0px;
+	background-color:black;
+	height:100%;
+	box-shadow:0 0 3px 2px black;
+	display:none;
+}
+.abas {
+	position:absolute;
+	background-color:gray;
+	width:100%;
+	top:95%;
+	height:5%;
+	overflow:hidden;
+	border-top:thin black solid;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+}
+.aba {
+	position:absolute;
+	display:table-cell;
+	vertical-align:middle;
+	height:90%;
+	width:0;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border-bottom:thin black solid;
+	border-right:thin black solid;
+	border-left:thin black solid;
+	background-color:lightgray;
+	padding-left:5px;
+	-moz-transition-property:box-shadow, left, opacity, width;
+	-moz-transition-duration:.25s, 1s, 1s, 1s;
+	-moz-transition-timing-function:ease;
+	-webkit-transition-property:box-shadow, left, opacity, width;
+	-webkit-transition-duration:.25s, 1s, 1s, 1s;
+	-webkit-transition-timing-function:ease;
+	cursor:pointer;
+	padding-top:3px;
+}
+.aba:hover {
+	box-shadow:inset 0 0 3px 0 black;
+}
+.aba:active {
+	-moz-transition-property:box-shadow, opacity;
+	-moz-transition-duration:.25s, .25s;
+	-moz-transition-timing-function:ease;
+	-webkit-transition-property:box-shadow, opacity;
+	-webkit-transition-duration:.25s, .25s;
+	-webkit-transition-timing-function:ease;
+	box-shadow:inset 0 0 5px 1px black;
+}
+.aba.ativa {
+	font-weight:bold;
+	text-shadow:1px 1px 2px black;
+}
+.criar {
+	right:5px;
+	padding:0;
+	padding-top:4px;
+	text-align:center;
+	width:30px;
+}
+#ajuda {
+	position:fixed;
+	width:60%;
+	height:60%;
+	top:20%;
+	left:20%;
+	background-color:lightgray;
+	border:thin black solid;
+	z-index:2;
+	padding:10px;
+	overflow:auto;
+	box-shadow:5px 5px 10px 0 gray;
+	display:none;
+}
+#fecharAjuda {
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-weight:bold;
+	font-size:18px;
+	width:15px;
+	height:15px;
+	text-align:center;
+	cursor:pointer;
+}
+#fecharAjuda:hover {
+	text-shadow:0 0 3px gray;
+}

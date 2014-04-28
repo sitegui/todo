@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html manifest="todo.cache">
+<head>
+<!--
+
+Lista TODO
+Versão 1.0 - 16/04/2012
+Guilherme de Oliveira Souza
+http://sitegui.com.br
+
+-->
+<meta charset="utf-8">
+<title>Lista TODO</title>
+<link rel="stylesheet" href="todo.css">
+<link rel="icon" href="icone.png">
+<script src="todo.js"></script>
+</head>
+<body>
+<div id="ajuda">
+	<div id="fecharAjuda" title="Fechar">X</div>
+	<h1>Lista TODO (Versão 1.0 - 16/04/2012)</h1>
+	<h2>O que é?</h2>
+	Lista TODO é uma lista de atividade onde se anota o que se deve fazer (<em>to do</em>).
+	<h2>Sobre</h2>
+	Essa é meu primeiro aplicativo para Web (Web App) e é basicamente um bloco de notas organizado em abas.<br>
+	Todas as informações são mantidas no seu próprio browser, nunca saindo do seu computador. Tanto isso é verdade que tudo irá funcionar corretamente mesmo quando sem conexão com a Internet.<br>
+	Funciona melhor no Firefox, com animações mais suaves e melhor suporte a teclas de atalho (claro). Também funciona no Chrome (mas claro, como ele não respeita sua privacidade ele nem vai perguntar se pode salvar coisas no seu computador). Quando ao IE, não tive tempo para esperá-lo abrir.
+	<h2>Atalhos de teclado</h2>
+	F1 exibe essa janela<br>
+	Ctrl+N cria uma nova aba (não funciona no Chrome)<br>
+	F2 renomea a aba ativa<br>
+	Shift+Del fecha a aba ativa<br>
+	Ctrl+S não faz nada (sim, tenho mania de apertar Ctrl+S a cada linha)<br>
+	Ctrl+E exporta os dados<br>
+	Ctrl+I permite importar dados<br>
+	<h2>Mais</h2>
+	<a href="#" onclick="window.open('/fale_conosco/?assunto=todo', 'janelaFaleConosco', 'width=500,height=500'); return false">Fale Conosco</a><br>
+	Baixe o <a href="todo.rar">código fonte</a> (9,15 KiB)
+</div>
+<div id="abas"></div>
+<textarea id="textarea"></textarea>
+</body>
+</html>
